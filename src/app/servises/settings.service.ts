@@ -8,7 +8,7 @@ export class SettingsService {
 
   constructor() {
     const url =
-      localStorage.getItem('theme') || './assets/css/colors/purple-dark.css';
+      localStorage.getItem('theme') || './assets/css/colors/blue-dark.css';
     this.linkTheme.setAttribute('href', url);
   }
 

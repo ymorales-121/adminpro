@@ -7,7 +7,6 @@ import { SettingsService } from './../../servises/settings.service';
   styles: [],
 })
 export class AccountSettingsComponent implements OnInit {
-  public linkTheme = document.querySelector('#theme');
   constructor(private settingsService: SettingsService) {}
 
   ngOnInit(): void {
