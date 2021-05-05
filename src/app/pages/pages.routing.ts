@@ -9,6 +9,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { PerfilComponent } from './perfil/perfil.component';
+//Mantenimientos
+import { UsuariosComponent } from './mantenimientos/usuarios/usuarios.component';
 
 const routes: Routes = [
   {
@@ -43,12 +45,14 @@ const routes: Routes = [
       },
       { path: 'rxjs', component: RxjsComponent, data: { titulo: 'RXJS' } },
       { path: 'perfil', component: PerfilComponent, data: { titulo: 'Perfil de Usuario' } },
+      //Mantenimientos
+      { path: 'usuarios', component: UsuariosComponent, data: { titulo: 'Gestor de Usuarios' } },
     ],
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule],
+exports: [RouterModule],
 })
 export class PagesRoutingModule {}
